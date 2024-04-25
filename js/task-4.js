@@ -9,7 +9,7 @@ const submitTo = event => {
     return alert("All form fields must be filled in");
   }
 
-  console.log(`Login: ${email}, Password: ${password}`);
+  console.log(`Email: ${email}, Password: ${password}`);
   event.target.reset();
 };
 
