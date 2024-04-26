@@ -8,12 +8,12 @@ const inputNumber = document.querySelector('input[type="number"]');
 const createButton = document.querySelector('button[data-create]');
 const destroyButton = document.querySelector('button[data-destroy]');
 const boxesContainer = document.querySelector('#boxes');
-const amount = parseInt(inputNumber.value);
 
 const createBoxes = amount => {
   let boxesDiv = '';
   let size = 30;
 if (amount >= 1 && amount <= 100){
+  const amount = parseInt(inputNumber.value);
   for (let i = 0; i < amount; i++) {
     boxesDiv += `<div style="width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()}"></div>`;
     size += 10;
